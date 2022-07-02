@@ -21,9 +21,8 @@ def check_document_existance(user_doc_number):
     return doc_founded
 
 
-def get_doc_owner_name():
-    user_doc_number = input('Введите номер документа - ')
-    print()
+def get_doc_owner_name(numder):
+    user_doc_number = numder
     doc_exist = check_document_existance(user_doc_number)
     if doc_exist:
         for current_document in documents:
@@ -173,3 +172,5 @@ def secretary_program_start():
 
 if __name__ == '__main__':
     secretary_program_start()
+
+# print(check_document_existance("10006"))
