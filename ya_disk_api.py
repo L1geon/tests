@@ -16,6 +16,5 @@ class YaUploader:
         headers = self.get_headers()
         params = {"path": file_path}
         response = requests.put(url, params=params, headers=headers)
-        print(response.json())
         return response.status_code
 
